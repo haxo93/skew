@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1394055351 source:c:\users\seffl_000\documents\github\skew\skew.cpp
+	<iostream>
+	<fstream>
+	<cmath>
+	"arrayUtils.h"
+
+1394054030 c:\users\seffl_000\documents\github\skew\arrayutils.h
+
