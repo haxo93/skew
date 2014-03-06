@@ -5,6 +5,19 @@
 
 using namespace std;
 
+float calculateDeviation(float data[], int arraySize, float mean)
+{
+    float sum = 0.0;
+    for(int i = 0; i < arraySize; i++)
+    {
+        sum += pow(data[i], 2);
+    }
+    float numerator = sum - (arraySize*(pow(mean,2)));
+    float denominator = arraySize -1;
+    float s = sqrt(numerator/denominator);
+    return s;
+}
+
 float calculateMean(float data[], int arraySize)
 {
     float sum = 0.0;
@@ -19,7 +32,9 @@ float calculateMean(float data[], int arraySize)
 void skew (float data[], int arraySize)
 {
     float mean = calculateMean(data, arraySize);
-    cout << "Mean = " << mean;
+    //cout << "Mean = " << mean;
+
+    float deviation = calculateDeviation(data, arraySize, mean);
 }
 
 int main()
