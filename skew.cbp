@@ -32,8 +32,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="README.md" />
 		<Unit filename="arrayUtils.h" />
 		<Unit filename="skew.cpp" />
+		<Unit filename="test0.in" />
 		<Extensions>
 			<code_completion />
 			<envvars />

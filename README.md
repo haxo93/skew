@@ -2,9 +2,12 @@ skew
 ====
 Lab: Stepwise Refinement
 CS250
+
 This lab (really, part 1 of an assignment) will give you practice in applying stepwise refinement to develop a new algorithm. For the follow-up assignment, you will carry that design through to the implementation of the program.
 You may work in pairs on the laboratory portion of the assignment if you wish. If you choose to work together, both people should submit the assignment, but their submissions should indicate the names of both people who worked upon it.
+
 1. General Instructions
+
 Read the Skewed Data problem description below. Apply the technique of stepwise refinement to design an algorithm for the skewed data program.
 This portion of the assignment is to be completed during the lab period. (Late submissions will be accepted at a 25% penalty until the due date of the acompanying assignment.)
 Use a text editor (e.g., emacs, the Code::Blocks editor or NotePad) to make your first pseudocode statement of the problem.

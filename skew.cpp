@@ -5,10 +5,21 @@
 
 using namespace std;
 
-// Determine if a data set is skewed
-void skew (float data[])
+float calculateMean(float data[], int arraySize)
 {
+    float sum = 0.0;
+    for(int i = 0; i < arraySize; i++)
+    {
+        sum += data[i];
+    }
+    return (sum/arraySize);
+}
 
+// Determine if a data set is skewed
+void skew (float data[], int arraySize)
+{
+    float mean = calculateMean(data, arraySize);
+    cout << "Mean = " << mean;
 }
 
 int main()
@@ -18,9 +29,8 @@ int main()
     ifstream myfile;
     myfile.open ("test0.in");
     float temp;
-    while(myfile)
+    while(myfile >> temp)
     {
-        myfile >> temp;
         addToEnd(data, arraySize, temp);
     }
 
@@ -28,6 +38,6 @@ int main()
     {
         cout << data[i] << endl;
     }
-    skew(data);
+    skew(data, arraySize);
     return 0;
 }
